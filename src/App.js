@@ -1,6 +1,6 @@
 import React from 'react';
 import { stringify } from 'query-string';
-import { fetchUtils, Admin, Resource, ShowGuesser } from 'react-admin';
+import { fetchUtils, Admin, Resource } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
 import { OrderList, OrderShow } from './components/Orders';
 import { TransactionList, TransactionShow } from './components/Transactions';
@@ -8,7 +8,7 @@ import { PackageOrderList, PackageOrderShow } from './components/PackageOrders';
 import { WithdrawalList, WithdrawalShow  } from './components/Withdrawals';
 import { Order, PackageOrder, Transaction, Withdrawal } from './models';
 
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://delivery.movex.tech/wp-json/foodbakery/v1';
 
 const httpClient = (url, options = {}) => {
     if (!options.headers) {
