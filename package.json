@@ -7,7 +7,8 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
-    "ra-data-simple-rest": "^3.9.3",
+    "prop-types": "^15.7.2",
+    "ra-data-json-server": "^3.10.2",
     "react": "^17.0.1",
     "react-admin": "^3.10.1",
     "react-dom": "^17.0.1",
@@ -37,5 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://delivery.movex.tech/wp-json/foodbakery/v1"
 }
